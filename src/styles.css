@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+/* tailwind */
+@import "tailwindcss";
+
+@theme {
+  --font-inria: "Inria Sans", sans-serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+
+  body {
+    @apply font-inria max-w-[1200px] m-auto bg-gray-100;
+  }
+}
+
+@layer utilities {
+  .menu {
+    @apply flex items-center justify-around  bg-blue-300 py-2 shadow;
+  }
+}
