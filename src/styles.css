@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply font-inria max-w-[1200px] m-auto bg-gray-100;
+    @apply font-inria max-w-[1200px] m-auto bg-blue-100;
   }
 }
 
