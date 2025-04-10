@@ -15,9 +15,9 @@ export class CardsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  redirectCredit() {}
+  redirectCredit(params: string) {}
 
-  redirectDebit() {}
+  redirectDebit(params: string) {}
 
   redirect(params: string) {
     if (params === 'credit') {

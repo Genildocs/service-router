@@ -2,6 +2,11 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 import { UpperCasePipe } from '@angular/common';
+
+interface ILink {
+  nome: string;
+}
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, UpperCasePipe],
@@ -11,7 +16,7 @@ import { UpperCasePipe } from '@angular/common';
 export class AppComponent implements OnInit {
   private _router = inject(Router);
 
-  listLink: any[] = [
+  listLink: ILink[] = [
     { nome: 'initial' },
     { nome: 'contatos' },
     { nome: 'informacoes' },
