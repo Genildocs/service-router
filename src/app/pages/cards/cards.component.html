@@ -1,2 +1,13 @@
-<p>cards works!</p>
+<div class="flex items-center gap-5">
+  <a
+    class="cursor-pointer bg-white shadow px-2 py-1 flex items-center hover:bg-blue-100 hover:text-blue-400 transition-all duration-200"
+    (click)="redirect('credit')"
+    >Credit</a
+  >
+  <a
+    class="cursor-pointer bg-white shadow px-2 py-1 flex items-center hover:bg-blue-100 hover:text-blue-400 transition-all duration-200"
+    (click)="redirect('debit')"
+    >Debit</a
+  >
+</div>
 <router-outlet></router-outlet>

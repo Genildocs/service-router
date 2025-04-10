@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-initial',
   imports: [],
   templateUrl: './initial.component.html',
-  styles: ``
+  styles: ``,
 })
 export class InitialComponent {
-
+  @Input() isActive!: string;
+  @Input() isAdmin!: string;
 }

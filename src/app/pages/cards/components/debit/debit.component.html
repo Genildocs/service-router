@@ -1,1 +1,4 @@
-<p>debit works!</p>
+@for(l of list$ | async; track $index){
+<a routerLink="../{{ l.id }}">{{ l.id }}</a>
+<p>{{ l.numero }}</p>
+}

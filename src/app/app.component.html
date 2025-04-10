@@ -1,17 +1,14 @@
-<div class="menu mb-2">
+<div class="menu">
+  @for(link of listLink; track $index){
   <div>
-    <a (click)="redirect()" class="cursor-pointer">Inicial</a>
+    <a
+      (click)="redirect(link.nome)"
+      class="cursor-pointer bg-white shadow px-2 py-1 flex items-center hover:bg-blue-100 hover:text-blue-400 transition-all duration-200"
+      >{{ link.nome[0] | uppercase }}{{ link.nome.slice(1) }}
+    </a>
   </div>
-  <div>
-    <a href="">Contatos</a>
-  </div>
-  <div>
-    <a href="">Informações</a>
-  </div>
-  <div>
-    <a href="">Cartões</a>
-  </div>
+  }
 </div>
-<div class="px-4">
+<div class="px-4 bg-white min-h-screen">
   <router-outlet></router-outlet>
 </div>

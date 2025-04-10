@@ -20,6 +20,6 @@
 
 @layer utilities {
   .menu {
-    @apply flex items-center justify-around  bg-blue-300 py-2 shadow;
+    @apply flex items-center justify-between px-4  bg-blue-300 py-2 shadow;
   }
 }

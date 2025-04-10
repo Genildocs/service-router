@@ -29,18 +29,18 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'cartoes',
+    path: 'cards',
     loadChildren: () =>
       import('./pages/cards/cards.routes').then((m) => m.cardsRoutes),
   },
-  {
-    path: '**',
-    redirectTo: 'not-found',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: '**',
+  //   redirectTo: 'not-found',
+  //   pathMatch: 'full',
+  // },
 
-  {
-    path: 'not-found',
-    component: NotFoundComponent,
-  },
+  // {
+  //   path: 'not-found',
+  //   component: NotFoundComponent,
+  // },
 ];

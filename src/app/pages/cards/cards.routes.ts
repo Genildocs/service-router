@@ -2,11 +2,12 @@ import { Routes } from '@angular/router';
 import { CardsComponent } from './cards.component';
 import { CreditComponent } from './components/credit/credit.component';
 import { DebitComponent } from './components/debit/debit.component';
+import { CardComponent } from './components/card/card.component';
 
 export const cardsRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'debit',
+    redirectTo: 'credit',
     pathMatch: 'full',
   },
   {
@@ -20,6 +21,10 @@ export const cardsRoutes: Routes = [
       {
         path: 'debit',
         component: DebitComponent,
+      },
+      {
+        path: ':id',
+        component: CardComponent,
       },
     ],
   },
